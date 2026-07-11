@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Elite Architect</title>
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)" />
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin />
+  <link
+    href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap)"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <div class="logo">
+        <span class="logo-icon">△</span>
+        <span class="logo-text">ELITE ARCHITECT</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#portfolio" class="active">Portofolio</a>
+        <a href="#services">Layanan</a>
+        <a href="#process">Proses</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-top">
+        <div class="hero-text">
+          <span class="section-label">Selected Works</span>
+          <h1>CRAFTING DIGITAL <br />INSTITUTIONS.</h1>
+        </div>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ui">UI Design</button>
+          <button class="filter-btn" data-filter="web">Website</button>
+          <button class="filter-btn" data-filter="app">Mobile App</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio container">
+      <div class="portfolio-grid">
+        <article class="project-card large project-item" data-category="web">
+          <div class="project-image">
+            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80)" alt="Law Firm Website" />
+            <div class="overlay">View Project</div>
+          </div>
+          <div class="project-info with-line">
+            <div>
+              <h3>Law Firm Website</h3>
+              <p>LEGAL SERVICES • WEB DEVELOPMENT</p>
+            </div>
+            <span class="line"></span>
+          </div>
+        </article>
+
+        <article class="project-card project-item" data-category="ui">
+          <div class="project-image portrait">
+            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80)" alt="Corporate Legal Dashboard" />
+            <div class="overlay">View Project</div>
+          </div>
+          <div class="project-info">
+            <h3>Corporate Legal Dashboard</h3>
+            <p>SAAS • UI/UX DESIGN</p>
+          </div>
+        </article>
+
+        <article class="project-card project-item" data-category="web">
+          <div class="project-image portrait">
+            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80)" alt="Professional Services Landing" />
+            <div class="overlay">View Project</div>
+          </div>
+          <div class="project-info">
+            <h3>Professional Services Landing</h3>
+            <p>CONSULTANCY • MARKETING</p>
+          </div>
+        </article>
+
+        <article class="project-card large project-item" data-category="app">
+          <div class="project-image">
+            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80)" alt="Elite Company Profile" />
+            <div class="overlay">View Project</div>
+          </div>
+          <div class="project-info with-line">
+            <div>
+              <h3>Elite Company Profile</h3>
+              <p>BRANDING • MOBILE EXPERIENCE</p>
+            </div>
+            <span class="line"></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="cta container">
+      <div class="cta-box">
+        <div class="cta-text">
+          <h2>READY TO BUILD YOUR DIGITAL LEGACY?</h2>
+          <p>
+            Kami membantu mengubah visi brand dan bisnis menjadi pengalaman digital
+            yang elegan, profesional, dan berkelas.
+          </p>
+        </div>
+        <a href="#contact" class="btn btn-secondary">Start a Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <div>
+        <h4>ELITE ARCHITECT</h4>
+        <p>©️ 2024 ELITE ARCHITECT. ALL RIGHTS RESERVED.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#portfolio">Portofolio</a>
+        <a href="#services">Layanan</a>
+        <a href="#process">Proses</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
