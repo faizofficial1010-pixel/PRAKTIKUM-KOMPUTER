@@ -10,15 +10,16 @@
 <body>
 
     <nav>
-        <div class="logo">ZIAF TEAM</div>
-        <ul class="nav-links">
-            <li><a href="#pendahuluan">Pendahuluan</a></li>
-            <li><a href="#tim">Tim Ahli</a></li>
-            <li><a href="#konsultasi">Konsultasi</a></li>
-        </ul>
-    </nav>
+    <div class="logo">ZIAF TEAM</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#pendahuluan" onclick="toggleMenu()">Pendahuluan</a></li>
+        <li><a href="#tim" onclick="toggleMenu()">Tim Ahli</a></li>
+        <li><a href="#track-record" onclick="toggleMenu()">Track Record</a></li>
+    </ul>
+</nav>
 
-    <<section id="pendahuluan">
+    <section id="pendahuluan">
     <h1>Ziaf Team</h1>
     <p>Ziaf Team adalah firma hukum korporasi dan litigasi papan atas (premium) yang berbasis di Jakarta, Indonesia. Kami berdedikasi untuk menyediakan layanan hukum tingkat tinggi bagi klien korporat, startup, institusi finansial, maupun individu. Dengan mengedepankan prinsip "Forward-Thinking & Adaptive Lawyering (Berpikir Visioner dan Adaptif)", firma kami menggabungkan keahlian hukum yang mendalam dengan pemahaman bisnis yang tajam untuk memitigasi risiko serta menyelesaikan tantangan hukum yang paling kompleks.</p>
 </section>
@@ -144,5 +145,6 @@
     <footer>
         <p>&copy; 2024 Ziaf Team. All rights reserved.</p>
     </footer>
+<script src="script.js"></script>
 </body>
 </html>

@@ -119,3 +119,20 @@ button:hover { background: var(--secondary); transform: scale(1.02); }
     
     section { padding: 40px 5%; }
 }
+
+/* Sembunyikan toggle menu di desktop */
+.menu-toggle { display: none; font-size: 1.8rem; cursor: pointer; }
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    
+    .nav-links {
+        display: none; /* Sembunyikan link di awal */
+        position: absolute; top: 80px; left: 0; width: 100%;
+        background: var(--white); flex-direction: column;
+        padding: 20px; text-align: center; border-bottom: 1px solid #ddd;
+    }
+    
+    /* Class untuk menampilkan menu saat diklik */
+    .nav-links.active { display: flex; }
+}

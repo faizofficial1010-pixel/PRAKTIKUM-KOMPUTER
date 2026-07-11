@@ -23,3 +23,8 @@ document.getElementById('consultForm').addEventListener('submit', function(e) {
     console.log("Data Konsultasi:", data);
     alert("Terima kasih " + data.nama + ". Data konsultasi untuk kategori " + data.kategori + " telah dikirim ke admin kami.");
 });
+
+function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('active');
+}
