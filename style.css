@@ -91,3 +91,31 @@ button {
     font-size: 0.9rem; letter-spacing: 1px; transition: var(--transition); 
 }
 button:hover { background: var(--secondary); transform: scale(1.02); }
+
+/* --- Responsivitas untuk HP / Mobile --- */
+@media (max-width: 768px) {
+    /* Header & Teks */
+    h1 { font-size: 2.2rem; }
+    header { padding: 60px 5%; }
+    
+    /* Navigasi */
+    nav { padding: 20px 5%; }
+    .nav-links { gap: 15px; }
+    .nav-links a { font-size: 0.7rem; }
+    
+    /* Grid Tim & Track Record (Bikin jadi 1 kolom biar tidak acak-acakan) */
+    .team-grid, .track-grid { 
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        padding: 20px 5%;
+    }
+    
+    /* Card agar tetap elegan di layar sempit */
+    .team-card { padding: 20px; }
+    .team-card img { height: 250px; }
+    
+    /* Form Konsultasi */
+    form { padding: 0 5%; }
+    
+    section { padding: 40px 5%; }
+}
