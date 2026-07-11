@@ -1,46 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  const projectItems = document.querySelectorAll(".project-item");
+function openModal() { document.getElementById('consultModal').style.display = 'block'; }
+function closeModal() { document.getElementById('consultModal').style.display = 'none'; }
 
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const filter = this.getAttribute("data-filter");
-
-      filterButtons.forEach((btn) => btn.classList.remove("active"));
-      this.classList.add("active");
-
-      projectItems.forEach((item) => {
-        const category = item.getAttribute("data-category");
-
-        if (filter === "all" || category === filter) {
-          item.classList.remove("hidden");
-          item.style.opacity = "0";
-          item.style.transform = "translateY(20px)";
-
-          setTimeout(() => {
-            item.style.opacity = "1";
-            item.style.transform = "translateY(0)";
-          }, 100);
-        } else {
-          item.style.opacity = "0";
-          item.style.transform = "translateY(20px)";
-
-          setTimeout(() => {
-            item.classList.add("hidden");
-          }, 250);
-        }
-      });
-    });
-  });
-
-  projectItems.forEach((item, index) => {
-    item.style.opacity = "0";
-    item.style.transform = "translateY(30px)";
-    item.style.transition = "all 0.8s cubic-bezier(0.2, 1, 0.3, 1)";
-
-    setTimeout(() => {
-      item.style.opacity = "1";
-      item.style.transform = "translateY(0)";
-    }, index * 150);
-  });
+document.getElementById('consultForm').onsubmit = (e) => {
+    e.preventDefault();
+    alert("Terima kasih, data telah diterima.");
+    closeModal();
+};
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.style.opacity = 0;
+    document.body.style.transition = "opacity 1s ease";
+    setTimeout(() => { document.body.style.opacity = 1; }, 100);
+});
+document.getElementById('consultForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const data = {
+        kategori: document.getElementById('kategori').value,
+        nama: document.getElementById('nama').value,
+        deskripsi: document.getElementById('deskripsi').value
+    };
+    
+    console.log("Data Konsultasi:", data);
+    alert("Terima kasih " + data.nama + ". Data konsultasi untuk kategori " + data.kategori + " telah dikirim ke admin kami.");
 });

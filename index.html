@@ -1,136 +1,148 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio | Elite Architect</title>
-  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)" />
-  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin />
-  <link
-    href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap)"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziaf Team | Law Firm</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="container navbar">
-      <div class="logo">
-        <span class="logo-icon">△</span>
-        <span class="logo-text">ELITE ARCHITECT</span>
-      </div>
 
-      <nav class="nav">
-        <a href="#portfolio" class="active">Portofolio</a>
-        <a href="#services">Layanan</a>
-        <a href="#process">Proses</a>
-      </nav>
+    <nav>
+        <div class="logo">ZIAF TEAM</div>
+        <ul class="nav-links">
+            <li><a href="#pendahuluan">Pendahuluan</a></li>
+            <li><a href="#tim">Tim Ahli</a></li>
+            <li><a href="#konsultasi">Konsultasi</a></li>
+        </ul>
+    </nav>
 
-      <a href="#contact" class="btn btn-primary">Contact</a>
+    <<section id="pendahuluan">
+    <h1>Ziaf Team</h1>
+    <p>Ziaf Team adalah firma hukum korporasi dan litigasi papan atas (premium) yang berbasis di Jakarta, Indonesia. Kami berdedikasi untuk menyediakan layanan hukum tingkat tinggi bagi klien korporat, startup, institusi finansial, maupun individu. Dengan mengedepankan prinsip "Forward-Thinking & Adaptive Lawyering (Berpikir Visioner dan Adaptif)", firma kami menggabungkan keahlian hukum yang mendalam dengan pemahaman bisnis yang tajam untuk memitigasi risiko serta menyelesaikan tantangan hukum yang paling kompleks.</p>
+</section>
+
+<section id="tujuan">
+    <h2>Tujuan & Kebermanfaatan Website</h2>
+    <div class="tujuan-grid">
+        <div class="tujuan-item">
+            <h3>Membangun Kredibilitas & Kepercayaan</h3>
+            <p>Menampilkan citra firma hukum yang profesional, berkelas, modern, dan tepercaya secara digital.</p>
+        </div>
+        <div class="tujuan-item">
+            <h3>Media Informasi & Edukasi</h3>
+            <p>Menyediakan artikel dan analisis hukum terkini sebagai bentuk kontribusi pemikiran kepada publik dan pelaku bisnis.</p>
+        </div>
+        <div class="tujuan-item">
+            <h3>Etalase Portofolio Ahli</h3>
+            <p>Menunjukkan kualitas, latar belakang pendidikan, dan legalitas dari para praktisi hukum yang tergabung di dalam firma.</p>
+        </div>
+        <div class="tujuan-item">
+            <h3>Aksesibilitas Solusi</h3>
+            <p>Memberikan kemudahan bagi calon klien untuk melakukan identifikasi masalah hukum secara mandiri dan menjadwalkan konsultasi secara cepat.</p>
+        </div>
     </div>
-  </header>
+</section>
 
-  <main>
-    <section class="hero container">
-      <div class="hero-top">
-        <div class="hero-text">
-          <span class="section-label">Selected Works</span>
-          <h1>CRAFTING DIGITAL <br />INSTITUTIONS.</h1>
-        </div>
-
-        <div class="filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="ui">UI Design</button>
-          <button class="filter-btn" data-filter="web">Website</button>
-          <button class="filter-btn" data-filter="app">Mobile App</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="portfolio container">
-      <div class="portfolio-grid">
-        <article class="project-card large project-item" data-category="web">
-          <div class="project-image">
-            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80)" alt="Law Firm Website" />
-            <div class="overlay">View Project</div>
-          </div>
-          <div class="project-info with-line">
-            <div>
-              <h3>Law Firm Website</h3>
-              <p>LEGAL SERVICES • WEB DEVELOPMENT</p>
+    <section id="tim">
+        <h2>Profil Tim Ahli</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="assets/Alfi syahri.jpeg" alt="Alfi Syahri">
+                <h3>Muhammad Alfi Syahri, S.H., M.H.</h3>
+                <p class="role">Managing Partner</p>
+                <p class="spec">Spesialisasi: Hukum Korporasi, M&A, Investasi, GCG</p>
             </div>
-            <span class="line"></span>
-          </div>
-        </article>
-
-        <article class="project-card project-item" data-category="ui">
-          <div class="project-image portrait">
-            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80)" alt="Corporate Legal Dashboard" />
-            <div class="overlay">View Project</div>
-          </div>
-          <div class="project-info">
-            <h3>Corporate Legal Dashboard</h3>
-            <p>SAAS • UI/UX DESIGN</p>
-          </div>
-        </article>
-
-        <article class="project-card project-item" data-category="web">
-          <div class="project-image portrait">
-            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80)" alt="Professional Services Landing" />
-            <div class="overlay">View Project</div>
-          </div>
-          <div class="project-info">
-            <h3>Professional Services Landing</h3>
-            <p>CONSULTANCY • MARKETING</p>
-          </div>
-        </article>
-
-        <article class="project-card large project-item" data-category="app">
-          <div class="project-image">
-            <img src="[images.unsplash.com](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80)" alt="Elite Company Profile" />
-            <div class="overlay">View Project</div>
-          </div>
-          <div class="project-info with-line">
-            <div>
-              <h3>Elite Company Profile</h3>
-              <p>BRANDING • MOBILE EXPERIENCE</p>
+            <div class="team-card">
+                <img src="assets/faiz.jpeg" alt="Muhammad Faiz">
+                <h3>Muhammad Faiz, S.H., M.Kn.</h3>
+                <p class="role">Senior Partner</p>
+                <p class="spec">Spesialisasi: Kenotariatan, Agraria, Perizinan, Kontrak</p>
             </div>
-            <span class="line"></span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="services" class="cta container">
-      <div class="cta-box">
-        <div class="cta-text">
-          <h2>READY TO BUILD YOUR DIGITAL LEGACY?</h2>
-          <p>
-            Kami membantu mengubah visi brand dan bisnis menjadi pengalaman digital
-            yang elegan, profesional, dan berkelas.
-          </p>
+            <div class="team-card">
+                <img src="assets/muadz adzam.jpeg" alt="Mu'adz Adzam">
+                <h3>Mu’adz Adzam Al-Huwaydi, S.H., M.H.</h3>
+                <p class="role">Partner</p>
+                <p class="spec">Spesialisasi: Sengketa Bisnis, Arbitrase, Litigasi, Kepailitan</p>
+            </div>
+            <div class="team-card">
+                <img src="assets/Nurul Hikmatulmaula.jpeg" alt="Nurul Hikmatulmaula">
+                <h3>Nurul Hikmatulmaula, S.H.</h3>
+                <p class="role">Senior Associate</p>
+                <p class="spec">Spesialisasi: Ketenagakerjaan, Compliance, UU PDP, Teknologi</p>
+            </div>
+            <div class="team-card">
+                <img src="assets/siti rahmadhita.jpeg" alt="Siti Rahmadhita">
+                <h3>Siti Rahmadhita, S.H., LL.M.</h3>
+                <p class="role">Associate Partner</p>
+                <p class="spec">Spesialisasi: Perdagangan Internasional, Pasar Modal, FDI, Due Diligence</p>
+            </div>
+            <div class="team-card">
+                <img src="assets/pahlevy fauzan.jpeg" alt="Pahlevy Fauzan">
+                <h3>Pahlevy Fauzan, S.H., LL.M.</h3>
+                <p class="role">Associate Partner</p>
+                <p class="spec">Portofolio: 40+ Due Diligence, FDI sektor Teknologi, obligasi</p>
+            </div>
         </div>
-        <a href="#contact" class="btn btn-secondary">Start a Project</a>
-      </div>
     </section>
-  </main>
-
-  <footer id="contact" class="footer">
-    <div class="container footer-content">
-      <div>
-        <h4>ELITE ARCHITECT</h4>
-        <p>©️ 2024 ELITE ARCHITECT. ALL RIGHTS RESERVED.</p>
-      </div>
-
-      <div class="footer-links">
-        <a href="#portfolio">Portofolio</a>
-        <a href="#services">Layanan</a>
-        <a href="#process">Proses</a>
-        <a href="#">Privacy Policy</a>
-      </div>
+    <section id="track-record">
+    <h2>Pengalaman Kasus (Track Record)</h2>
+    <div class="track-grid">
+        <div class="track-item">
+            <h3>Restrukturisasi Korporasi</h3>
+            <p>Mendampingi grup perusahaan nasional sektor manufaktur (aset >Rp850 miliar) dalam reorganisasi dan negosiasi kreditur.</p>
+        </div>
+        <div class="track-item">
+            <h3>Merger & Akuisisi (M&A)</h3>
+            <p>Akuisisi perusahaan teknologi oleh investor regional dengan nilai transaksi mencapai Rp650 miliar.</p>
+        </div>
+        <div class="track-item">
+            <h3>Penyelesaian Sengketa</h3>
+            <p>Sengketa wanprestasi kontrak konstruksi melalui arbitrase nasional dengan nilai klaim >Rp120 miliar.</p>
+        </div>
+        <div class="track-item">
+            <h3>Kepatuhan Regulasi</h3>
+            <p>Audit kepatuhan UU PDP dan tata kelola untuk 25+ perusahaan di sektor fintech dan jasa.</p>
+        </div>
+        <div class="track-item">
+            <h3>Hukum Ketenagakerjaan</h3>
+            <p>Pendampingan perselisihan industrial dan penyusunan PP/PKB untuk perusahaan multinasional.</p>
+        </div>
+        <div class="track-item">
+            <h3>Pasar Modal & Investasi</h3>
+            <p>Pendampingan aksi korporasi obligasi dan FDI, termasuk legal due diligence dan legal opinion.</p>
+        </div>
     </div>
-  </footer>
+</section>
+<section id="konsultasi">
+    <h2>Asisten Konsultasi Mandiri</h2>
+    <form id="consultForm">
+        <select id="kategori" required>
+            <option value="">-- Pilih Kategori Kasus --</option>
+            <option value="perusahaan">Hukum Perusahaan</option>
+            <option value="litigasi">Sengketa Bisnis</option>
+            <option value="haki">Hak Kekayaan Intelektual</option>
+            <option value="properti">Hukum Properti</option>
+        </select>
+        
+        <select id="status" required>
+            <option value="">-- Status Hukum Anda --</option>
+            <option value="perusahaan">Atas Nama Perusahaan/Bisnis</option>
+            <option value="individu">Individu/Perorangan</option>
+        </select>
+        
+        <input type="text" id="nama" placeholder="Nama Lengkap" required>
+        <input type="email" id="email" placeholder="Alamat Email" required>
+        <input type="text" id="whatsapp" placeholder="Nomor WhatsApp" required>
+        <textarea id="deskripsi" placeholder="Deskripsi singkat kasus (maksimal 500 karakter)" maxlength="500"></textarea>
+        
+        <button type="submit">Jadwalkan Konsultasi</button>
+    </form>
+</section>
 
-  <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Ziaf Team. All rights reserved.</p>
+    </footer>
 </body>
 </html>
